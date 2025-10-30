@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+
+    <changeSet id="1" author="bgolla">
+        <createTable tableName="EMPLOYEE">
+            <column name="emp_id" type="int">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="emp_name" type="VARCHAR(25)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="2" author="bgolla">
+        <createTable tableName="DEPARTMENT">
+            <column name="dept_id" type="int">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="dept_name" type="VARCHAR(25)"/>
+        </createTable>
+    </changeSet>
+    <changeSet id="3" author="bgolla">
+        <createTable tableName="STUDENTS">
+            <column name="student_id" type="int">
+                <constraints primaryKey="true"/>
+            </column>
+            <column name="student_name" type="VARCHAR(25)"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
